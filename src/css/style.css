@@ -8,7 +8,7 @@ body {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/src/img/png/background_bg.png');
+  background-image: url('src/img/png/background_bg.png');
 }
 
 body * {
@@ -399,7 +399,7 @@ header {
   }
 
   body {
-    background-image: url('/src/img/png/background.png');
+    background-image: url('src/img/png/background.png');
   }
 
   .why_us__title {
