@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/src/img/png/background_bg.png');
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 30px;
+}
+
+.logo span {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #B8B5B5;
+  margin-left: 5px;
+}
+
+.menu_wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+}
+
+.menu_wrapper a {
+  text-decoration: none;
+  color: #403C3C;
+  font-size: 1rem;
+}
+
+.logo,
+.menu,
+.login {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.btn {
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #E9614B;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.login {
+  justify-content: flex-end;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn_login {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 17px;
+  color: #fff;
+  background-color: #403C3C;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_login span {
+  margin-right: 6px;
+
+}
+
+.main {
+  margin-top: 31px;
+}
+
+.main_title {
+  font-size: 2.25rem;
+  color: #403C3C;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: 500px;
+}
+
+.phone {
+  margin-right: 1rem;
+}
+
+.phone_title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #403C3C;
+
+  opacity: 0.6;
+}
+
+.phone_number {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #403C3C;
+}
+
+.phone_md {
+  display: none;
+}
+
+.main_img img {
+  width: 70%;
+}
+
+
+.main_callback {
+  position: relative;
+  bottom: 100px;
+}
+
+.main_callback__wrapper {
+  padding: 20px 17px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  width: 77%;
+  border-radius: 10px;
+
+}
+
+.main_callback__title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.main_callback__input input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  color: #403C3C;
+  line-height: 180%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  border: 1px solid #E2DAC5;
+  border-radius: 10px;
+}
+
+.main_benefits {
+  font-size: 1rem;
+  margin-top: 28px;
+  border-left: 2px solid #FFFFFF;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main_benefits:first-child {
+  border-left: none;
+  padding-left: 15px;
+}
+
+.main_benefits span {
+  font-weight: 700;
+}
+
+.main_callback__agree {
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #403C3C;
+  opacity: 0.4;
+  letter-spacing: -0.01em;
+  margin-top: 10px;
+
+}
+
+.main_callback__agree a {
+  color: #403C3C;
+}
+
+.why_us__benefits_md {
+  display: none;
+}
+
+.why_us_cols_lg {
+  display: flex;
+  gap: 17px;
+  flex-direction: column;
+}
+
+.why_us__title {
+  text-align: center;
+  font-size: 2.25rem;
+  letter-spacing: -0.01em;
+  color: #403C3C;
+  font-weight: 700;
+}
+
+.why_us__img {
+  text-align: center;
+  width: 100%;
+}
+
+.why_us__img img {
+  width: 85%;
+}
+
+.why_us__benefits_md {
+  max-height: 450px;
+  margin: 0 auto;
+  gap: 17px;
+}
+
+.why_us__benefit {
+  max-height: 132px;
+  overflow: hidden;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+.why_us__benefit.show {
+  animation: show 0.3s ease-in forwards;
+}
+
+.why_us__benefit.hide {
+  animation: hide 0.3s ease-out forwards;
+}
+
+@keyframes show {
+  0% {
+    max-height: 132px;
+  }
+
+  100% {
+    max-height: 500px;
+  }
+}
+
+@keyframes hide {
+  0% {
+    max-height: 500px;
+  }
+
+  100% {
+    max-height: 132px;
+  }
+}
+
+.show_more {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E2DAC5;
+  border-radius: 50%;
+  z-index: 10;
+  transition: all linear 0.3s;
+  cursor: pointer;
+}
+
+.show_more:hover {
+  background-color: #E9614B;
+}
+
+.why_us__benefit::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+}
+
+.why_us__benefit_title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #403C3C;
+  margin-bottom: 12px;
+}
+
+.why_us__benefit_text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 180%;
+
+  letter-spacing: -0.01em;
+
+  color: #403C3C;
+
+  opacity: 0.6;
+}
+
+.btn_wrapper {
+  text-align: center;
+}
+
+.why_us__btn {
+  padding-top: 16px;
+  margin-top: 12px;
+  padding-bottom: 16px;
+  width: 343px;
+  font-size: 1rem;
+  box-shadow: 12px 12px 19px #FDC5C5;
+}
+
+
+@media (max-width: 1160px) {
+  .why_us__benefits_lg {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .phone {
+    display: none;
+  }
+
+  .phone_md {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 0;
+  }
+
+  .main_img {
+    margin-top: 22px;
+  }
+
+  .why_us__benefits_lg {
+    display: none;
+  }
+
+  .why_us__benefits_md {
+    display: flex;
+  }
+
+  .show_more {
+    display: none;
+  }
+
+  .why_us__benefit::after {
+    display: none;
+    ;
+  }
+
+  .why_us__benefits_md {
+    max-height: 900px;
+  }
+
+  .why_us__benefit {
+    max-height: unset;
+  }
+
+  .why_us__img {
+    display: none;
+
+  }
+
+  .why_us__l {
+    display: none;
+  }
+
+  .why_us__md {
+    display: block;
+  }
+
+  body {
+    background-image: url('/src/img/png/background.png');
+  }
+
+  .why_us__title {
+    text-align: left;
+  }
+
+  .main_callback__wrapper {
+    width: 100%;
+  }
+
+  .main_img img {
+    width: 90%;
+  }
+
+  .main_benefits {
+    font-size: 0.75rem;
+  }
+
+  .why_us__btn {
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 768px) {}
